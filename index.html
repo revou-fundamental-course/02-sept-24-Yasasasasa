@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Geometri</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Geometri</h1>
+   
+        <div class="section">
+            <label for="triangleToggle">Segitiga</label>
+            <input type="radio" id="triangleToggle" name="shape" value="triangle" checked>
+            <label for="parallelogramToggle">Jajargenjang</label>
+            <input type="radio" id="parallelogramToggle" name="shape" value="parallelogram">
+        </div>
+
+        <div id="triangleCalculator" class="calculator">
+          <img src="Foto Segitiga.png">
+            <h2>Luas Segitiga</h2>
+            <form id="areaForm">
+                <label for="base">Alas (a):</label>
+                <input type="number" id="base" required><br><br>
+                
+                <label for="height">Tinggi (t):</label>
+                <input type="number" id="height" required><br><br>
+                
+                <button type="submit">Hitung Luas</button>
+            </form>
+            <div id="areaResult"></div>
+
+            <div class="section">
+                <h2>Keliling Segitiga</h2>
+                <form id="perimeterForm">
+                    <label for="sideA">Sisi a:</label>
+                    <input type="number" id="sideA" required><br><br>
+                    
+                    <label for="sideB">Sisi b:</label>
+                    <input type="number" id="sideB" required><br><br>
+                    
+                    <label for="sideC">Sisi c:</label>
+                    <input type="number" id="sideC" required><br><br>
+                    
+                    <button type="submit">Hitung Keliling</button>
+                </form>
+                <div id="perimeterResult"></div>
+            </div>
+        </div>
+
+        <div id="parallelogramCalculator" class="calculator" style="display:none;">
+          <img src="Jajargenjang.png">
+            <h2>Luas Jajargenjang</h2>
+            <form id="parallelogramAreaForm">
+                <label for="basePar">Alas (a):</label>
+                <input type="number" id="basePar" required><br><br>
+                
+                <label for="heightPar">Tinggi (t):</label>
+                <input type="number" id="heightPar" required><br><br>
+                
+                <button type="submit">Hitung Luas</button>
+            </form>
+            <div id="parallelogramAreaResult"></div>
+
+            <div class="section">
+                <h2>Keliling Jajargenjang</h2>
+                <form id="parallelogramPerimeterForm">
+                    <label for="sideAPar">Sisi a:</label>
+                    <input type="number" id="sideAPar" required><br><br>
+                    
+                    <label for="sideBPar">Sisi b:</label>
+                    <input type="number" id="sideBPar" required><br><br>
+                    
+                    <button type="submit">Hitung Keliling</button>
+                </form>
+                <div id="parallelogramPerimeterResult"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
